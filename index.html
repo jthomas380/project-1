@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="https://kit.fontawesome.com/796bb10e64.js" crossorigin="anonymous"></script>
     <title>Library</title>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -19,7 +20,29 @@
           <li><a href="#" class="nav__link--primary">Books</a></li>
         </ul>
       </div>
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu__links">
+          <li class="menu__list"><a  href="#" class="menu__link">Home</a></li>
+          <li class="menu__list"><a href="#features" class="menu__link">Books</a></li>
+          <li class="menu__list"><a class="menu__link no-cursor">Contact</a></li>
+        </ul>
+      </div>
       </nav>
+      <div class="menu__backdrop">
+        <div class="menu__container">
+          <ul class="menu__links">
+            <li><a href="#" class="menu__link">Home</a></li>
+            <li><a href="#" class="menu__link">Contact</a></li>
+            <li><a href="#" class="menu__link--primary">Books</a></li>
+          </ul>
+        </div>
+      </div>
       <header>
         <div class="header__container">
           <div class="header__description">
@@ -380,7 +403,9 @@
   <div class="explore__container">
     <div class="row__column">
       <h2>Explore More <span class="blue">Books</span></h2>
+      <a href="#We're gonna add this burger menu inside thefeatures">
       <button class="explore__btn">Explore</button>
+      </a>
     </div>
   </div>
 </section>
